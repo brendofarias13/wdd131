@@ -16,32 +16,38 @@
     text-align:center;
     }
     
+    header h2{
+    font-size:2rem;
+    margin-bottom:15px;
+    }
+    
     #menu{
     font-size:2rem;
     background:none;
     border:none;
     color:white;
     cursor:pointer;
-    margin-top:10px;
+    display:none;
     }
     
     .navigation{
-    display:none;
-    flex-direction:column;
-    }
-    
-    .navigation.open{
     display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
     }
     
     .navigation a{
     color:white;
     text-decoration:none;
     padding:10px;
+    font-size:1rem;
     }
     
     .navigation a:hover{
     background:#00509e;
+    border-radius:5px;
     }
     
     main{
@@ -72,6 +78,7 @@
     width:100%;
     height:auto;
     display:block;
+    border-radius:5px;
     }
     
     figcaption{

@@ -1,14 +1,16 @@
 @media screen and (min-width:768px){
 
-    #menu{
-    display:none;
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
     }
     
     .navigation{
     display:flex;
     flex-direction:row;
-    justify-content:center;
-    gap:20px;
+    gap:25px;
     }
     
     .gallery{
