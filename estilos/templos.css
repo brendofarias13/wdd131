@@ -27,7 +27,8 @@
     border:none;
     color:white;
     cursor:pointer;
-    display:none;
+    display:block;
+    margin:auto;
     }
     
     .navigation{
@@ -42,12 +43,25 @@
     color:white;
     text-decoration:none;
     padding:10px;
-    font-size:1rem;
+    width:100%;
+    text-align:center;
     }
     
     .navigation a:hover{
     background:#00509e;
     border-radius:5px;
+    }
+    
+    @media (max-width:767px){
+    
+    .navigation{
+    display:none;
+    }
+    
+    .navigation.open{
+    display:flex;
+    }
+    
     }
     
     main{
