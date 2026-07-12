@@ -2,13 +2,15 @@ const menu = document.querySelector("#menu");
 const nav = document.querySelector("nav");
 
 menu.addEventListener("click", () => {
+
     nav.classList.toggle("open");
 
-    if (nav.classList.contains("open")) {
+    if(nav.classList.contains("open")){
         menu.textContent = "✖";
-    } else {
+    }else{
         menu.textContent = "☰";
     }
+
 });
 
 document.querySelector("#year").textContent = new Date().getFullYear();
