@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brasil | Página do País</title>
+
+    <meta name="description"
+        content="Página sobre o Brasil desenvolvida para a atividade S03 do curso WDD131.">
+    <meta name="author" content="Brendo da Silva Farias">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos/local.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/local.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Brasil 🇧🇷</h1>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <picture>
+
+                <source media="(min-width:768px)" srcset="imagens/brasil-large.webp">
+
+                <img src="imagens/brasil-small.webp" alt="Paisagem do Brasil" width="1200" height="700"
+                    fetchpriority="high">
+
+            </picture>
+
+        </section>
+
+        <!-- CARDS -->
+        <section class="cards">
+
+            <!-- DADOS -->
+            <article class="card dados">
+
+                <h2>Dados</h2>
+
+                <img src="imagens/bandeira.webp" alt="Bandeira do Brasil" class="bandeira" width="300" height="180">
+
+                <ul>
+
+                    <li><strong>Capital:</strong> Brasília</li>
+
+                    <li><strong>Idioma:</strong> Português</li>
+
+                    <li><strong>População:</strong> 212 milhões</li>
+
+                    <li><strong>Área:</strong> 8.515.767 km²</li>
+
+                    <li><strong>Moeda:</strong> Real (BRL)</li>
+
+                    <li><strong>Continente:</strong> América do Sul</li>
+
+                </ul>
+
+            </article>
+
+            <!-- CLIMA -->
+            <article class="card clima">
+
+                <h2>Clima</h2>
+
+                <img src="imagens/clima.svg" alt="Ícone do clima" class="clima-icon" width="90" height="90">
+
+                <ul>
+
+                    <li>
+
+                        <strong>Temperatura:</strong>
+
+                        <span id="temperatura">8</span>°C
+
+                    </li>
+
+                    <li>
+
+                        <strong>Condição:</strong>
+
+                        Parcialmente nublado
+
+                    </li>
+
+                    <li>
+
+                        <strong>Vento:</strong>
+
+                        <span id="vento">12</span> km/h
+
+                    </li>
+
+                    <li>
+
+                        <strong>Umidade:</strong>
+
+                        70%
+
+                    </li>
+
+                    <li>
+
+                        <strong>Sensação térmica:</strong>
+
+                        <span id="sensacao"></span>
+
+                    </li>
+
+                </ul>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+
+            &copy;
+            <span id="ano"></span>
+
+            Brendo da Silva Farias
+
+        </p>
+
+        <p>
+
+            Última modificação:
+
+            <span id="modificado"></span>
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
