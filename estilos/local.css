@@ -10,235 +10,225 @@
     --branco: #ffffff;
     --cinza: #f4f4f4;
     --texto: #222222;
+    --borda: #ddd;
     --sombra: 0 4px 12px rgba(0,0,0,.15);
     --largura: 1200px;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:'Roboto',sans-serif;
-    background:var(--cinza);
-    color:var(--texto);
-    line-height:1.6;
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--cinza);
+    color: var(--texto);
+    line-height: 1.6;
 }
 
-header{
-    background:var(--verde);
-    color:white;
-    text-align:center;
-    padding:20px;
+
+header {
+    background: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 20px;
+    box-shadow: var(--sombra);
 }
 
-header h1{
-    font-size:2.2rem;
-    letter-spacing:1px;
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
 }
 
-main{
-    max-width:var(--largura);
-    margin:auto;
+
+main {
+    max-width: var(--largura);
+    margin: auto;
 }
 
-.hero{
-    width:100%;
+
+.hero {
+    width: 100%;
 }
 
-.hero picture{
-    display:block;
+
+.hero picture,
+picture {
+    display: block;
 }
 
-.hero img{
-    width:100%;
-    display:block;
-    height:auto;
+
+.hero img {
+    width: 100%;
+    display: block;
+    height: auto;
+    object-fit: cover;
 }
 
-.cards{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:25px;
-    padding:25px;
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 25px;
 }
 
-.card{
-    background:white;
-    border-radius:10px;
-    padding:25px;
-    box-shadow:var(--sombra);
+
+.card {
+    background: var(--branco);
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: var(--sombra);
+    height: 100%;
+    transition: .3s;
 }
 
-.card h2{
-    text-align:center;
-    background:var(--azul);
-    color:white;
-    padding:12px;
-    border-radius:8px;
-    margin-bottom:20px;
+
+.card:hover {
+    transform: translateY(-4px);
 }
 
-.bandeira{
-    display:block;
-    width:220px;
-    max-width:100%;
-    margin:0 auto 20px;
-    border-radius:8px;
+
+.card h2 {
+    text-align: center;
+    background: var(--azul);
+    color: var(--branco);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.card ul{
-    list-style:none;
+
+.bandeira {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 8px;
 }
 
-.card li{
-    margin-bottom:12px;
-    font-size:1.05rem;
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
 }
 
-.clima-icon{
-    width:90px;
-    display:block;
-    margin:0 auto 20px;
+
+.card li {
+    margin-bottom: 12px;
+    padding: 6px 0;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--borda);
 }
 
-footer{
-    background:var(--verde);
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:30px;
+
+.card li:last-child {
+    border-bottom: none;
 }
 
-footer p{
-    margin:8px 0;
+
+.clima-icon {
+    width: 90px;
+    display: block;
+    margin: 0 auto 20px;
 }
+
+
+footer {
+    background: var(--verde);
+    color: var(--branco);
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: var(--sombra);
+}
+
+
+footer p {
+    margin: 8px 0;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+strong {
+    color: var(--azul);
+}
+
+
+a {
+    color: var(--azul);
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* ===========================
    TABLET E DESKTOP
 =========================== */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-    .cards{
+    .cards {
         grid-template-columns: 1fr 1fr;
         align-items: start;
     }
 
-    .card{
-        height: 100%;
+
+    .clima h2::after {
+        content: " ⛅";
+        font-size: 1.4rem;
     }
 
-    .card h2{
-        position: relative;
+
+    .clima-icon {
+        display: none;
     }
 
-    /* Emoji exigido pela atividade
-       (apenas na visualização maior) */
 
-    .clima h2::after{
-        content:" ⛅";
-        font-size:1.4rem;
+    header h1 {
+        font-size: 2.7rem;
     }
 
-    /* Esconde o SVG no desktop */
 
-    .clima-icon{
-        display:none;
+    .card li {
+        font-size: 1.1rem;
     }
 
-    header h1{
-        font-size:2.7rem;
-    }
 
-    .card li{
-        font-size:1.1rem;
-    }
-
-    .bandeira{
-        width:260px;
+    .bandeira {
+        width: 260px;
     }
 
 }
+
 
 
 /* ===========================
    CELULAR
 =========================== */
 
-@media screen and (max-width:767px){
+@media screen and (max-width: 767px) {
 
-    .cards{
-        grid-template-columns:1fr;
+    .cards {
+        grid-template-columns: 1fr;
     }
 
-    /* No celular aparece o SVG */
 
-    .clima-icon{
-        display:block;
+    .clima-icon {
+        display: block;
     }
 
-}
-
-
-/* ===========================
-   ACESSIBILIDADE
-=========================== */
-
-img{
-    max-width:100%;
-}
-
-strong{
-    color:var(--azul);
-}
-
-a{
-    color:var(--azul);
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-picture{
-    display:block;
-}
-
-.hero img{
-    object-fit:cover;
-}
-
-
-/* ===========================
-   PEQUENOS AJUSTES
-=========================== */
-
-.card:hover{
-    transform:translateY(-4px);
-    transition:.3s;
-}
-
-header,
-footer{
-    box-shadow:var(--sombra);
-}
-
-.card{
-    transition:.3s;
-}
-
-.card ul{
-    padding-left:0;
-}
-
-.card li{
-    padding:6px 0;
-    border-bottom:1px solid #ddd;
-}
-
-.card li:last-child{
-    border-bottom:none;
 }
