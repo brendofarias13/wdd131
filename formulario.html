@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Avaliação de Produto">
+    <meta name="author" content="Brendo Farias">
+    <title>Formulário de Avaliação de Produto</title>
+
+    <link rel="stylesheet" href="estilos/formulario.css">
+
+    <script src="scripts/formulario.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Formulário de Avaliação de Produto</h1>
+</header>
+
+<main>
+
+<form method="get" action="avaliacao.html">
+
+<div class="campo">
+<label for="produto">
+Nome do Produto <span>*</span>
+</label>
+
+<select id="produto" name="produto" required>
+
+<option value="" disabled selected>
+Selecione um Produto...
+</option>
+
+</select>
+
+</div>
+
+
+<div class="campo">
+
+<p class="titulo">
+Classificação Geral <span>*</span>
+</p>
+
+<div class="estrelas">
+
+<label for="estrela1">
+☆
+<input
+type="radio"
+id="estrela1"
+name="classificacao"
+value="1"
+required>
+</label>
+
+<label for="estrela2">
+☆☆
+<input
+type="radio"
+id="estrela2"
+name="classificacao"
+value="2">
+</label>
+
+<label for="estrela3">
+☆☆☆
+<input
+type="radio"
+id="estrela3"
+name="classificacao"
+value="3">
+</label>
+
+<label for="estrela4">
+☆☆☆☆
+<input
+type="radio"
+id="estrela4"
+name="classificacao"
+value="4">
+</label>
+
+<label for="estrela5">
+☆☆☆☆☆
+<input
+type="radio"
+id="estrela5"
+name="classificacao"
+value="5">
+</label>
+
+</div>
+
+</div>
+
+
+<div class="campo">
+
+<label for="instalacao">
+Data de Instalação <span>*</span>
+</label>
+
+<input
+type="date"
+id="instalacao"
+name="instalacao"
+required>
+
+</div>
+
+
+<div class="campo">
+
+<p class="titulo">
+Recursos Úteis
+</p>
+
+<label>
+<input
+type="checkbox"
+id="durabilidade"
+name="recursos"
+value="Durabilidade">
+
+Durabilidade
+</label>
+
+<label>
+<input
+type="checkbox"
+id="facilidade"
+name="recursos"
+value="Facilidade de Uso">
+
+Facilidade de Uso
+</label>
+
+<label>
+<input
+type="checkbox"
+id="desempenho"
+name="recursos"
+value="Desempenho">
+
+Desempenho
+</label>
+
+<label>
+<input
+type="checkbox"
+id="design"
+name="recursos"
+value="Design">
+
+Design
+</label>
+
+</div>
+
+
+<div class="campo">
+
+<label for="avaliacao">
+Avaliação Escrita
+</label>
+
+<textarea
+id="avaliacao"
+name="avaliacao"
+rows="6"></textarea>
+
+</div>
+
+
+<div class="campo">
+
+<label for="usuario">
+Nome de Usuário
+</label>
+
+<input
+type="text"
+id="usuario"
+name="usuario">
+
+</div>
+
+
+<input
+class="botao"
+type="submit"
+value="Enviar Avaliação">
+
+</form>
+
+</main>
+
+<footer>
+
+<p>
+&copy;
+<span id="currentyear"></span>
+🌿 Brendo Farias 🌿 Brasil
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
