@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de Avaliação de Produto">
+    <meta name="description" content="Formulário para avaliação de produtos, permitindo selecionar um produto, classificá-lo, registrar recursos úteis e enviar comentários do usuário.">
     <meta name="author" content="Brendo Farias">
     <title>Formulário de Avaliação de Produto</title>
 
@@ -29,8 +29,8 @@ Nome do Produto <span>*</span>
 
 <select id="produto" name="produto" required>
 
-<option value="" disabled selected>
-Selecione um Produto...
+<option value="" selected disabled>
+Selecione um produto...
 </option>
 
 </select>
@@ -62,7 +62,8 @@ required>
 type="radio"
 id="estrela2"
 name="classificacao"
-value="2">
+value="2"
+required>
 </label>
 
 <label for="estrela3">
@@ -71,7 +72,8 @@ value="2">
 type="radio"
 id="estrela3"
 name="classificacao"
-value="3">
+value="3"
+required>
 </label>
 
 <label for="estrela4">
@@ -80,7 +82,8 @@ value="3">
 type="radio"
 id="estrela4"
 name="classificacao"
-value="4">
+value="4"
+required>
 </label>
 
 <label for="estrela5">
@@ -89,7 +92,8 @@ value="4">
 type="radio"
 id="estrela5"
 name="classificacao"
-value="5">
+value="5"
+required>
 </label>
 
 </div>
@@ -118,43 +122,43 @@ required>
 Recursos Úteis
 </p>
 
-<label>
 <input
 type="checkbox"
 id="durabilidade"
 name="recursos"
 value="Durabilidade">
 
+<label for="durabilidade">
 Durabilidade
 </label>
 
-<label>
 <input
 type="checkbox"
 id="facilidade"
 name="recursos"
 value="Facilidade de Uso">
 
+<label for="facilidade">
 Facilidade de Uso
 </label>
 
-<label>
 <input
 type="checkbox"
 id="desempenho"
 name="recursos"
 value="Desempenho">
 
+<label for="desempenho">
 Desempenho
 </label>
 
-<label>
 <input
 type="checkbox"
 id="design"
 name="recursos"
 value="Design">
 
+<label for="design">
 Design
 </label>
 
