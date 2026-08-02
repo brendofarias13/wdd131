@@ -28,14 +28,14 @@ const products = [
 ];
 
 // Preencher o select dinamicamente
-const productSelect = document.getElementById("produto");
+const productSelect = document.getElementById("product");
 
 if (productSelect) {
     products.forEach(product => {
-        const option = document.createElement("option");
-        option.value = product.id;      // obrigatório: usar o id no value
-        option.textContent = product.name;
-        productSelect.appendChild(option);
+        productSelect.insertAdjacentHTML(
+            "beforeend",
+            `<option value="${product.id}">${product.name}</option>`
+        );
     });
 }
 
