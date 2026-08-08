@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<meta
+    name="description"
+    content="Conheça os nove sabores de brownies da Mr. Brownie Gourmet e escolha entre os tamanhos tradicional e grande.">
+
+<meta
+    name="author"
+    content="Brendo Farias">
+
+<title>Sabores - Mr. Brownie Gourmet</title>
+
+<link rel="stylesheet" href="styles/projeto.css">
+
+<script src="scripts/projeto.js" defer></script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <a
+        class="logo"
+        href="index.html"
+        aria-label="Mr. Brownie Gourmet - Início">
+
+        <img
+            src="imagens/logo.jpeg"
+            alt="Logo da Mr. Brownie Gourmet"
+            width="180"
+            height="70">
+
+    </a>
+
+
+    <button
+        class="menu-button"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="main-navigation">
+
+        ☰
+
+    </button>
+
+
+    <nav
+        class="site-nav"
+        id="main-navigation"
+        aria-label="Navegação principal">
+
+        <a href="index.html">
+            Início
+        </a>
+
+        <a
+            class="active"
+            href="sabores.html">
+
+            Sabores
+
+        </a>
+
+        <a href="contato.html">
+            Contato
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+
+        <p class="eyebrow">
+            NOSSO CARDÁPIO
+        </p>
+
+        <h1>
+            Sabores que fazem você querer mais
+        </h1>
+
+        <p>
+            Escolha entre nove sabores deliciosos e dois tamanhos
+            de brownie.
+        </p>
+
+    </section>
+
+
+    <section class="section flavors-section">
+
+        <div class="section-heading">
+
+            <p class="eyebrow">
+                ESCOLHA SEU FAVORITO
+            </p>
+
+            <h2>
+                Encontre o brownie perfeito para você
+            </h2>
+
+            <p>
+                Todos os nove sabores estão disponíveis nos tamanhos
+                tradicional e grande.
+            </p>
+
+        </div>
+
+
+        <div class="size-info-grid">
+
+            <article class="size-info-card">
+
+                <span aria-hidden="true">
+                    🍫
+                </span>
+
+                <div>
+
+                    <h3>
+                        Tradicional
+                    </h3>
+
+                    <p>
+                        5 × 5 cm · 40–50 g ·
+                        <strong>R$ 5,00</strong>
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="size-info-card">
+
+                <span aria-hidden="true">
+                    🍫
+                </span>
+
+                <div>
+
+                    <h3>
+                        Grande
+                    </h3>
+
+                    <p>
+                        6 × 6 cm · 75–80 g ·
+                        <strong>R$ 7,00</strong>
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div class="filter-area">
+
+            <label for="flavor-filter">
+                Filtrar sabores:
+            </label>
+
+            <select
+                id="flavor-filter"
+                name="flavor-filter">
+
+                <option value="todos">
+                    Todos os sabores
+                </option>
+
+                <option value="tradicionais">
+                    Tradicionais
+                </option>
+
+                <option value="especiais">
+                    Especiais
+                </option>
+
+                <option value="frutados">
+                    Frutados
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <p
+            id="flavor-message"
+            class="flavor-message"
+            aria-live="polite">
+        </p>
+
+
+        <div
+            id="flavor-grid"
+            class="flavor-grid">
+        </div>
+
+    </section>
+
+
+    <section class="favorite-section">
+
+        <div>
+
+            <p class="eyebrow">
+                SEU FAVORITO
+            </p>
+
+            <h2>
+                Qual sabor ganhou seu coração?
+            </h2>
+
+            <p>
+                Clique em "Favoritar" no sabor que você mais gosta.
+                Sua escolha ficará salva neste navegador.
+            </p>
+
+        </div>
+
+
+        <div class="favorite-display">
+
+            <span aria-hidden="true">
+                ❤️
+            </span>
+
+            <p id="favorite-flavor">
+                Você ainda não escolheu um sabor favorito.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section class="mini-brownie-section">
+
+        <div>
+
+            <p class="eyebrow">
+                PARA EVENTOS
+            </p>
+
+            <h2>
+                Mini brownies
+            </h2>
+
+            <p>
+                Quer levar a Mr. Brownie para uma festa,
+                evento ou comemoração?
+            </p>
+
+            <p>
+                Nossos mini brownies custam
+                <strong>R$ 140,00 o cento</strong>
+                e podem ser pedidos a partir de 50 unidades.
+            </p>
+
+        </div>
+
+
+        <div class="mini-brownie-highlight">
+
+            <span>
+                100
+            </span>
+
+            <strong>
+                unidades
+            </strong>
+
+            <small>
+                R$ 140,00
+            </small>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="imagens/logo.jpeg"
+                alt="Logo da Mr. Brownie Gourmet"
+                width="180"
+                height="70"
+                loading="lazy">
+
+            <p>
+                Felicidade em cada mordida.
+            </p>
+
+            <p>
+                Açailândia - MA
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>
+                Navegação
+            </h2>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="sabores.html">
+                Sabores
+            </a>
+
+            <a href="contato.html">
+                Contato
+            </a>
+
+            <a href="referencias.html">
+                Referências
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>
+                Contato
+            </h2>
+
+            <a
+                href="https://wa.me/5599991599690"
+                target="_blank"
+                rel="noopener">
+
+                WhatsApp
+
+            </a>
+
+            <a
+                href="https://instagram.com/mrbrownie73"
+                target="_blank"
+                rel="noopener">
+
+                Instagram @mrbrownie73
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+
+            &copy;
+            <span id="current-year"></span>
+            Mr. Brownie Gourmet.
+            Todos os direitos reservados.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="description" content="Entre em contato com a Mr. Brownie Gourmet para fazer seu pedido, tirar dúvidas ou conhecer nossos deliciosos brownies.">
+<meta name="author" content="Brendo Farias">
+
+<title>Contato | Mr. Brownie Gourmet</title>
+
+<link rel="stylesheet" href="styles/projeto.css">
+
+<script src="scripts/projeto.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<header class="site-header">
+
+    <a href="index.html" class="logo" aria-label="Mr. Brownie Gourmet - Início">
+        <img
+            src="imagens/logo.jpeg"
+            alt="Logo da Mr. Brownie Gourmet"
+            width="180"
+            height="70"
+        >
+    </a>
+
+    <button
+        class="menu-button"
+        type="button"
+        id="menu-button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu"
+    >
+        ☰
+    </button>
+
+    <nav class="site-nav" id="menu">
+        <a href="index.html">Início</a>
+        <a href="sabores.html">Sabores</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+
+</header>
+
+
+<main>
+
+    <section class="page-hero">
+        <div class="section-heading">
+            <p class="eyebrow">MR. BROWNIE GOURMET</p>
+
+            <h1>Entre em Contato</h1>
+
+            <p>
+                Ficou com vontade de experimentar nossos brownies?
+                Entre em contato com a Mr. Brownie Gourmet e faça seu pedido!
+            </p>
+        </div>
+    </section>
+
+
+    <section class="pagina-contato">
+
+        <div class="section-heading">
+            <h2>Envie sua mensagem</h2>
+
+            <p>
+                Preencha o formulário abaixo e fale com a gente.
+                Será um prazer atender você!
+            </p>
+        </div>
+
+        <form id="form-contato" action="#" method="get">
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    required
+                    autocomplete="name"
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="email">E-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="telefone">Telefone</label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    autocomplete="tel"
+                    placeholder="(99) 99999-9999"
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="assunto">Assunto</label>
+
+                <select id="assunto" name="assunto" required>
+                    <option value="" disabled selected>
+                        Selecione uma opção
+                    </option>
+
+                    <option value="pedido">
+                        Fazer um pedido
+                    </option>
+
+                    <option value="duvida">
+                        Tirar uma dúvida
+                    </option>
+
+                    <option value="informacao">
+                        Mais informações
+                    </option>
+
+                    <option value="outro">
+                        Outro
+                    </option>
+                </select>
+            </div>
+
+
+            <div class="campo">
+                <label for="mensagem">Mensagem</label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    required
+                    placeholder="Digite sua mensagem..."
+                ></textarea>
+            </div>
+
+
+            <button type="submit">
+                Enviar mensagem
+            </button>
+
+            <p
+                id="mensagem-sucesso"
+                class="mensagem-sucesso"
+                aria-live="polite"
+            ></p>
+
+        </form>
+
+    </section>
+
+
+    <section class="informacoes-contato">
+
+        <div class="section-heading">
+            <p class="eyebrow">FALE COM A GENTE</p>
+
+            <h2>Estamos aqui para você</h2>
+
+            <p>
+                Estamos prontos para preparar um brownie especial
+                para deixar seu dia ainda mais gostoso!
+            </p>
+        </div>
+
+
+        <div class="contato-info">
+
+            <div>
+                <h3>WhatsApp</h3>
+
+                <p>
+                    Entre em contato conosco para fazer seu pedido
+                    ou tirar suas dúvidas.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Atendimento</h3>
+
+                <p>
+                    Respondemos às mensagens o mais rápido possível
+                    e teremos prazer em ajudar.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+
+            <img
+                src="imagens/logo.jpeg"
+                alt="Logo da Mr. Brownie Gourmet"
+                width="180"
+                height="70"
+            >
+
+            <p>
+                Felicidade em cada mordida!
+            </p>
+
+            <p>
+                Açailândia - MA
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>Navegação</h2>
+
+            <a href="index.html">Início</a>
+            <a href="sabores.html">Sabores</a>
+            <a href="contato.html">Contato</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h2>Mr. Brownie Gourmet</h2>
+
+            <a href="index.html#historia">Nossa História</a>
+            <a href="sabores.html">Nossos Sabores</a>
+            <a href="contato.html">Fale Conosco</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <p>
+            &copy; <span id="ano"></span> Mr. Brownie Gourmet.
+            Todos os direitos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+
+</body>
+</html>
