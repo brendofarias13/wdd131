@@ -1,6 +1,6 @@
 /* ==============================
    ESTILOS GERAIS
-   ============================== */
+============================== */
 
 * {
     box-sizing: border-box;
@@ -49,7 +49,7 @@ p {
 
 /* ==============================
    CABEÇALHO
-   ============================== */
+============================== */
 
 .site-header {
     background-color: #4b2818;
@@ -102,7 +102,7 @@ p {
 
 /* ==============================
    CAPA
-   ============================== */
+============================== */
 
 .hero {
     display: grid;
@@ -137,7 +137,8 @@ p {
     color: #5c4639;
 }
 
-.hero-actions {
+.hero-actions,
+.cta-actions {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -194,12 +195,12 @@ p {
 
 /* ==============================
    IMAGEM DA CAPA
-   ============================== */
+============================== */
 
 .hero-card {
     overflow: hidden;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 10px 30px rgba(75, 40, 24, 0.18);
 }
 
@@ -227,9 +228,10 @@ p {
 
 /* ==============================
    SEÇÕES
-   ============================== */
+============================== */
 
-.section {
+.section,
+.partners-section {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -248,7 +250,7 @@ p {
 
 /* ==============================
    NOSSA HISTÓRIA
-   ============================== */
+============================== */
 
 .story-content {
     display: grid;
@@ -279,7 +281,7 @@ p {
 
 /* ==============================
    PRODUTOS / TAMANHOS
-   ============================== */
+============================== */
 
 .size-grid {
     display: grid;
@@ -345,7 +347,7 @@ p {
 
 /* ==============================
    DELIVERY
-   ============================== */
+============================== */
 
 .delivery-section {
     background-color: #4b2818;
@@ -392,12 +394,7 @@ p {
 
 /* ==============================
    PARCEIROS
-   ============================== */
-
-.partners-section {
-    max-width: 1200px;
-    margin: 0 auto;
-}
+============================== */
 
 .partners-grid {
     display: grid;
@@ -428,7 +425,7 @@ p {
 
 
 /* ==============================
-BROWNIETTONE
+   BROWNIETTONE
 ============================== */
 
 .seasonal-section {
@@ -467,7 +464,6 @@ BROWNIETTONE
 .seasonal-image img {
     width: 100%;
     height: 300px;
-    display: block;
     object-fit: cover;
     object-position: center;
 }
@@ -475,7 +471,7 @@ BROWNIETTONE
 
 /* ==============================
    CHAMADA FINAL
-   ============================== */
+============================== */
 
 .cta-section {
     background-color: #6b3b25;
@@ -497,15 +493,13 @@ BROWNIETTONE
 }
 
 .cta-actions {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    margin-top: 0;
 }
 
 
 /* ==============================
-   PÁGINA DE SABORES
-   ============================== */
+   PÁGINAS INTERNAS
+============================== */
 
 .page-hero {
     background-color: #f1dfd2;
@@ -526,7 +520,7 @@ BROWNIETTONE
 
 /* ==============================
    INFORMAÇÕES DOS TAMANHOS
-   ============================== */
+============================== */
 
 .size-info-grid {
     display: grid;
@@ -563,7 +557,7 @@ BROWNIETTONE
 
 /* ==============================
    CARDS DOS SABORES
-   ============================== */
+============================== */
 
 .flavor-grid {
     display: grid;
@@ -574,7 +568,7 @@ BROWNIETTONE
 }
 
 .flavor-card {
-    background-color: #ffffff;
+    background-color: white;
     border: 1px solid #ead8ca;
     border-radius: 16px;
     overflow: hidden;
@@ -649,7 +643,7 @@ BROWNIETTONE
 
 /* ==============================
    FILTRO DE SABORES
-   ============================== */
+============================== */
 
 .filter-area {
     display: flex;
@@ -676,11 +670,6 @@ BROWNIETTONE
     font-size: 1rem;
 }
 
-
-/* ==============================
-   MENSAGEM DOS SABORES
-   ============================== */
-
 .flavor-message {
     text-align: center;
     font-weight: bold;
@@ -691,7 +680,7 @@ BROWNIETTONE
 
 /* ==============================
    FAVORITO
-   ============================== */
+============================== */
 
 .favorite-section {
     max-width: 1200px;
@@ -724,7 +713,7 @@ BROWNIETTONE
 
 /* ==============================
    MINI BROWNIES
-   ============================== */
+============================== */
 
 .mini-brownie-section {
     max-width: 1200px;
@@ -782,7 +771,7 @@ BROWNIETTONE
 
 /* ==============================
    PÁGINA DE CONTATO
-   ============================== */
+============================== */
 
 .pagina-contato {
     max-width: 900px;
@@ -790,29 +779,31 @@ BROWNIETTONE
     padding: 70px 20px;
 }
 
-.pagina-contato .section-heading {
+.pagina-contato .section-heading,
+.informacoes-contato .section-heading {
     text-align: center;
     max-width: 750px;
     margin: 0 auto 35px;
 }
 
-.pagina-contato .section-heading h2 {
+.pagina-contato .section-heading h2,
+.informacoes-contato .section-heading h2 {
     font-size: 2rem;
     margin-bottom: 12px;
 }
 
-.pagina-contato .section-heading p {
+.pagina-contato .section-heading p,
+.informacoes-contato .section-heading p {
     color: #5c4639;
-    font-size: 1.05rem;
 }
 
 
 /* ==============================
-   FORMULÁRIO DE CONTATO
-   ============================== */
+   FORMULÁRIO
+============================== */
 
 #form-contato {
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 20px;
     padding: 35px;
     box-shadow: 0 10px 30px rgba(75, 40, 24, 0.12);
@@ -842,7 +833,6 @@ BROWNIETTONE
     color: #3d2418;
     font-family: inherit;
     font-size: 1rem;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .campo input:focus,
@@ -868,12 +858,10 @@ BROWNIETTONE
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
-    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 #form-contato button:hover {
     background-color: #6b3b25;
-    transform: translateY(-2px);
 }
 
 .mensagem-sucesso {
@@ -886,27 +874,12 @@ BROWNIETTONE
 
 /* ==============================
    INFORMAÇÕES DE CONTATO
-   ============================== */
+============================== */
 
 .informacoes-contato {
     max-width: 1100px;
     margin: 0 auto;
     padding: 20px 20px 70px;
-}
-
-.informacoes-contato .section-heading {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 35px;
-}
-
-.informacoes-contato .section-heading h2 {
-    font-size: 2rem;
-    margin-bottom: 12px;
-}
-
-.informacoes-contato .section-heading p {
-    color: #5c4639;
 }
 
 .contato-info {
@@ -943,8 +916,60 @@ BROWNIETTONE
 
 
 /* ==============================
+   REDES SOCIAIS
+============================== */
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #4b2818;
+    text-decoration: none;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #f1dfd2;
+    font-weight: bold;
+}
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============================
    RODAPÉ
-   ============================== */
+============================== */
 
 .site-footer {
     background-color: #4b2818;
@@ -1007,13 +1032,18 @@ BROWNIETTONE
 
 
 /* ==============================
-   RESPONSIVIDADE - TABLET
-   ============================== */
+   TABLET
+============================== */
 
 @media screen and (max-width: 900px) {
 
-    .hero {
+    .hero,
+    .story-content,
+    .favorite-section {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
         text-align: center;
     }
 
@@ -1026,38 +1056,20 @@ BROWNIETTONE
         justify-content: center;
     }
 
-    .story-content {
-        grid-template-columns: 1fr;
-    }
-
-    .size-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .flavor-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+    .size-grid,
+    .flavor-grid,
     .partners-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .seasonal-section {
+    .seasonal-section,
+    .mini-brownie-section {
         grid-template-columns: 1fr;
         text-align: center;
     }
 
     .delivery-details {
         grid-template-columns: 1fr;
-    }
-
-    .favorite-section {
-        grid-template-columns: 1fr;
-    }
-
-    .mini-brownie-section {
-        grid-template-columns: 1fr;
-        text-align: center;
     }
 
     .mini-brownie-highlight {
@@ -1072,8 +1084,8 @@ BROWNIETTONE
 
 
 /* ==============================
-   RESPONSIVIDADE - CELULAR
-   ============================== */
+   CELULAR
+============================== */
 
 @media screen and (max-width: 600px) {
 
@@ -1082,12 +1094,12 @@ BROWNIETTONE
         padding: 12px 20px;
     }
 
-    .logo {
+    .logo,
+    .logo img {
         width: 140px;
     }
 
     .logo img {
-        width: 140px;
         height: 55px;
     }
 
@@ -1108,11 +1120,16 @@ BROWNIETTONE
         display: flex;
     }
 
+    section {
+        padding: 40px 15px;
+    }
+
     .hero {
         padding: 40px 15px;
     }
 
-    .hero h1 {
+    .hero h1,
+    .page-hero h1 {
         font-size: 2.2rem;
     }
 
@@ -1120,11 +1137,9 @@ BROWNIETTONE
         height: 220px;
     }
 
-    section {
-        padding: 40px 15px;
-    }
-
-    .section-heading h2 {
+    .section-heading h2,
+    .pagina-contato .section-heading h2,
+    .informacoes-contato .section-heading h2 {
         font-size: 1.7rem;
     }
 
@@ -1132,24 +1147,15 @@ BROWNIETTONE
         padding: 45px 15px;
     }
 
-    .page-hero h1 {
-        font-size: 2.2rem;
-    }
-
-    .size-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .size-info-grid {
+    .size-grid,
+    .size-info-grid,
+    .flavor-grid,
+    .contato-info {
         grid-template-columns: 1fr;
     }
 
     .pagina-contato {
         padding: 45px 15px;
-    }
-
-    .pagina-contato .section-heading h2 {
-        font-size: 1.7rem;
     }
 
     #form-contato {
@@ -1161,17 +1167,11 @@ BROWNIETTONE
     }
 
     .contato-info {
-        grid-template-columns: 1fr;
         gap: 18px;
     }
 
     .contato-info > div {
         padding: 25px 20px;
-    }
-
-    .flavor-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
     }
 
     .filter-area {
@@ -1188,8 +1188,9 @@ BROWNIETTONE
         padding: 30px 20px;
     }
 
-    .seasonal-icon {
-        font-size: 5rem;
+    .mini-brownie-section {
+        margin: 20px 15px 40px;
+        padding: 30px 20px;
     }
 
     .cta-section {
@@ -1202,11 +1203,6 @@ BROWNIETTONE
         justify-content: center;
     }
 
-    .mini-brownie-section {
-        margin: 20px 15px 40px;
-        padding: 30px 20px;
-    }
-
     .footer-content {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -1214,12 +1210,15 @@ BROWNIETTONE
     }
 
     .footer-brand img {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 15px;
     }
 
     .footer-links {
         align-items: center;
     }
-}
 
+    .social-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
