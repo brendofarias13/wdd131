@@ -428,8 +428,8 @@ p {
 
 
 /* ==============================
-   BROWNIETTONE
-   ============================== */
+BROWNIETTONE
+============================== */
 
 .seasonal-section {
     max-width: 1200px;
@@ -456,9 +456,20 @@ p {
     color: #4b2818;
 }
 
-.seasonal-icon {
-    font-size: 7rem;
-    text-align: center;
+.seasonal-image {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.seasonal-image img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
 }
 
 
