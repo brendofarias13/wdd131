@@ -351,66 +351,50 @@ if (flavorGrid) {
 // FORMULÁRIO DE CONTATO
 // ==============================
 
-const formulario =
-    document.querySelector("#form-contato");
-
-const assuntoSelect =
-    document.querySelector("#assunto");
-
-const campoMensagem =
-    document.querySelector("#mensagem");
+const formulario = document.querySelector("#form-contato");
+const assuntoSelect = document.querySelector("#assunto");
+const campoMensagem = document.querySelector("#mensagem");
+const mensagemSucesso = document.querySelector("#mensagem-sucesso");
 
 
 // ==============================
-// MENSAGENS PRÉ-DEFINIDAS
+// MENSAGEM AUTOMÁTICA
 // ==============================
 
 if (assuntoSelect && campoMensagem) {
 
-    assuntoSelect.addEventListener("change", () => {
+    assuntoSelect.addEventListener("change", function () {
 
-        switch (assuntoSelect.value) {
+        if (this.value === "pedido") {
 
-            case "pedido":
+            campoMensagem.value =
+`🍫 Olá, Mr. Brownie Gourmet! Gostaria de fazer um pedido.
 
-                campoMensagem.value =
-                    `🍫 Olá, Mr. Brownie Gourmet! Gostaria de fazer um pedido.
-
-Sabor: 
+Sabor:
 Valor do brownie: R$ 5,00 ou R$ 7,00
-Quantidade: 
-Data desejada: 
+Quantidade:
+Data desejada:
 Forma de pagamento: Pix / Dinheiro / Cartão
-Forma de entrega/retirada: `;
+Forma de entrega/retirada:`;
 
-                break;
+        } else if (this.value === "duvida") {
 
+            campoMensagem.value =
+`Olá, Mr. Brownie Gourmet! Gostaria de tirar uma dúvida.
 
-            case "duvida":
+Minha dúvida:`;
 
-                campoMensagem.value =
-                    `Olá, Mr. Brownie Gourmet! Gostaria de tirar uma dúvida.
+        } else if (this.value === "informacao") {
 
-Minha dúvida: `;
+            campoMensagem.value =
+`Olá, Mr. Brownie Gourmet! Gostaria de receber mais informações.
 
-                break;
+Gostaria de saber sobre:`;
 
+        } else {
 
-            case "informacao":
+            campoMensagem.value = "";
 
-                campoMensagem.value =
-                    `Olá, Mr. Brownie Gourmet! Gostaria de receber mais informações.
-
-Gostaria de saber sobre: `;
-
-                break;
-
-
-            case "outro":
-
-                campoMensagem.value = "";
-
-                break;
         }
 
     });
@@ -424,10 +408,9 @@ Gostaria de saber sobre: `;
 
 if (formulario) {
 
-    formulario.addEventListener("submit", event => {
+    formulario.addEventListener("submit", function (event) {
 
         event.preventDefault();
-
 
         const nome =
             document.querySelector("#nome").value.trim();
@@ -465,9 +448,6 @@ if (formulario) {
             "_blank"
         );
 
-
-        const mensagemSucesso =
-            document.querySelector("#mensagem-sucesso");
 
         if (mensagemSucesso) {
 
