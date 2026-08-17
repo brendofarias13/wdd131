@@ -354,11 +354,80 @@ if (flavorGrid) {
 const formulario =
     document.querySelector("#form-contato");
 
+const assuntoSelect =
+    document.querySelector("#assunto");
+
+const campoMensagem =
+    document.querySelector("#mensagem");
+
+
+// ==============================
+// MENSAGENS PRÉ-DEFINIDAS
+// ==============================
+
+if (assuntoSelect && campoMensagem) {
+
+    assuntoSelect.addEventListener("change", () => {
+
+        switch (assuntoSelect.value) {
+
+            case "pedido":
+
+                campoMensagem.value =
+                    `🍫 Olá, Mr. Brownie Gourmet! Gostaria de fazer um pedido.
+
+Sabor: 
+Valor do brownie: R$ 5,00 ou R$ 7,00
+Quantidade: 
+Data desejada: 
+Forma de pagamento: Pix / Dinheiro / Cartão
+Forma de entrega/retirada: `;
+
+                break;
+
+
+            case "duvida":
+
+                campoMensagem.value =
+                    `Olá, Mr. Brownie Gourmet! Gostaria de tirar uma dúvida.
+
+Minha dúvida: `;
+
+                break;
+
+
+            case "informacao":
+
+                campoMensagem.value =
+                    `Olá, Mr. Brownie Gourmet! Gostaria de receber mais informações.
+
+Gostaria de saber sobre: `;
+
+                break;
+
+
+            case "outro":
+
+                campoMensagem.value = "";
+
+                break;
+        }
+
+    });
+
+}
+
+
+// ==============================
+// ENVIO PARA O WHATSAPP
+// ==============================
+
 if (formulario) {
 
     formulario.addEventListener("submit", event => {
 
         event.preventDefault();
+
 
         const nome =
             document.querySelector("#nome").value.trim();
@@ -366,14 +435,13 @@ if (formulario) {
         const telefone =
             document.querySelector("#telefone").value.trim();
 
-        const assuntoSelect =
-            document.querySelector("#assunto");
-
         const assunto =
-            assuntoSelect.options[assuntoSelect.selectedIndex].text;
+            assuntoSelect.options[
+                assuntoSelect.selectedIndex
+            ].text;
 
         const mensagem =
-            document.querySelector("#mensagem").value.trim();
+            campoMensagem.value.trim();
 
 
         const textoWhatsApp =
@@ -409,4 +477,5 @@ if (formulario) {
         }
 
     });
+
 }
