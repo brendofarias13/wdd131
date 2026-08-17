@@ -354,18 +354,59 @@ if (flavorGrid) {
 const formulario =
     document.querySelector("#form-contato");
 
-const mensagemSucesso =
-    document.querySelector("#mensagem-sucesso");
-
-if (formulario && mensagemSucesso) {
+if (formulario) {
 
     formulario.addEventListener("submit", event => {
 
         event.preventDefault();
 
-        mensagemSucesso.textContent =
-            "Mensagem enviada com sucesso! Obrigado por entrar em contato com a Mr. Brownie Gourmet.";
+        const nome =
+            document.querySelector("#nome").value.trim();
 
-        formulario.reset();
+        const telefone =
+            document.querySelector("#telefone").value.trim();
+
+        const assuntoSelect =
+            document.querySelector("#assunto");
+
+        const assunto =
+            assuntoSelect.options[assuntoSelect.selectedIndex].text;
+
+        const mensagem =
+            document.querySelector("#mensagem").value.trim();
+
+
+        const textoWhatsApp =
+            `🍫 *Novo contato pelo site Mr. Brownie Gourmet*%0A%0A` +
+            `*Nome:* ${nome}%0A` +
+            `*Telefone:* ${telefone || "Não informado"}%0A` +
+            `*Assunto:* ${assunto}%0A%0A` +
+            `*Mensagem:*%0A${mensagem}`;
+
+
+        const numeroWhatsApp =
+            "5599991599690";
+
+
+        const linkWhatsApp =
+            `https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`;
+
+
+        window.open(
+            linkWhatsApp,
+            "_blank"
+        );
+
+
+        const mensagemSucesso =
+            document.querySelector("#mensagem-sucesso");
+
+        if (mensagemSucesso) {
+
+            mensagemSucesso.textContent =
+                "Seu WhatsApp foi aberto com a mensagem pronta para envio.";
+
+        }
+
     });
 }
